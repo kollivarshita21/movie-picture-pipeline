@@ -19,7 +19,7 @@ jobs:
         with:
           python-version: '3.10'
       - run: pip install pipenv
-      - run: pipenv install
+      - run: pipenv install --dev
       - run: pipenv run lint
 
   test:
@@ -33,7 +33,7 @@ jobs:
         with:
           python-version: '3.10'
       - run: pip install pipenv
-      - run: pipenv install
+      - run: pipenv install --dev
       - run: pipenv run test
 
   build:
